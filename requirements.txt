@@ -34,3 +34,5 @@ aiohttp
 # Optional Development Utilities
 ipython
 jupyter
+
+streamlit
