@@ -8,6 +8,14 @@ The pipeline runs 4 agents in sequence:
 3. *Writer Chain* — Drafts a structured research report from all gathered data
 4. *Critic Chain* — Reviews the report and provides quality feedback
 
+The Streamlit UI runs the topic input and controls from a sidebar, with live stage tracking (Search → Read → Write → Critique) and tabbed output for the Report, Critic feedback, and Raw Research.
+
+## Features
+- Live stage tracking as each agent runs
+- Session history of past research topics
+- Tabbed results: final report, critic review, and raw research
+- One-click report download as Markdown
+
 ## Tech Stack
 - Python
 - LangChain
@@ -34,7 +42,6 @@ pip install -r requirements.txt
 4. Add your API keys in a `.env` file
 MISTRAL_API_KEY=your_key_here
 TAVILY_API_KEY=your_key_here
-
 5. Run the app
 ```bash
 streamlit run app.py
